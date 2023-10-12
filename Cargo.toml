@@ -17,11 +17,15 @@ nb = "0.1.2"
 embedded-hal = {version="0.2.3", features=["unproven"]}
 # once_cell = { version = "1.18.0", default-features = false }
 avr-device = "0.5.2"
+micromath = { version = "2.0.0", features = ["num-traits"] }
+# num-traits = { version = "0.2", default-features = false, features = ["libm"] }
+
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
 rev = "7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
-features = ["arduino-mega2560"]
+optional=true
+# features = ["arduino-uno", "arduino-mega2560"]
 
 # Configure the build for minimal size - AVRs have very little program memory
 [profile.dev]
@@ -36,3 +40,8 @@ codegen-units = 1
 debug = true
 lto = true
 opt-level = "s"
+
+[features] 
+default = ["uno"]
+mega = ["arduino-hal/arduino-mega2560"]
+uno = ["arduino-hal/arduino-uno"]

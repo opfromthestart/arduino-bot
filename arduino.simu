@@ -1,0 +1,39 @@
+<circuit type="simulide_0.1">
+ 
+Audio Out-13: 
+<item y="-108" x="-532" rotation="0" labelx="-12" Show_id="false" valLabely="0" Impedance="8" id="Audio Out-13" labelrot="0" hflip="1" vflip="1" objectName="Audio Out-13" valLabelx="0" itemtype="AudioOut" labely="-24" valLabRot="0"/>
+ 
+Node-4: 
+<item y="-276" x="-516" rotation="0" labelx="-16" Show_id="false" valLabely="0" id="Node-4" labelrot="0" hflip="1" vflip="1" objectName="Node-4" valLabelx="0" itemtype="Node" labely="-24" valLabRot="0"/>
+ 
+Voltimeter-3: 
+<item y="-204" x="-564" rotation="0" labelx="-12" Show_id="false" valLabely="0" id="Voltimeter-3" labelrot="0" hflip="1" vflip="1" objectName="Voltimeter-3" valLabelx="0" itemtype="Voltimeter" labely="-24" valLabRot="0"/>
+ 
+Led-2: 
+<item objectName="Led-2" itemtype="Led" MaxCurrent="0.03" y="-204" labelrot="0" rotation="-90" Color="0" Resistance="0.6" threshold="2.4" x="-516" hflip="1" Grounded="false" valLabely="0" vflip="1" valLabRot="0" id="Led-2" labely="-24" labelx="-16" valLabelx="0" Show_id="false"/>
+ 
+Arduino Uno-1: 
+<item y="-268" x="-460" rotation="0" labelx="0" Show_id="true" valLabely="0" id="Arduino Uno-1" labelrot="0" hflip="1" vflip="1" Mhz="16" objectName="Arduino Uno-1" program="target/avr-atmega328p/debug/arduino-bot.elf" valLabelx="0" itemtype="Arduino" labely="-20" valLabRot="0"/>
+ 
+Connector-5: 
+<item objectName="Connector-5" itemtype="Connector" y="-164" labelrot="0" rotation="0" pointList="-452,-164,-516,-164,-516,-188" enodeid="Circ_eNode-6" x="-452" hflip="1" valLabely="0" endpinid="Led-2-lPin" vflip="1" valLabRot="0" id="Connector-5" labely="-24" labelx="-16" valLabelx="0" startpinid="Arduino Uno-1-PB2" Show_id="false"/>
+ 
+Connector-7: 
+<item objectName="Connector-7" itemtype="Connector" y="-220" labelrot="0" rotation="0" pointList="-516,-220,-516,-276" enodeid="Circ_eNode-8" x="-516" hflip="1" valLabely="0" endpinid="Node-4-0" vflip="1" valLabRot="0" id="Connector-7" labely="-24" labelx="-16" valLabelx="0" startpinid="Led-2-rPin" Show_id="false"/>
+ 
+Connector-9: 
+<item objectName="Connector-9" itemtype="Connector" y="-188" labelrot="0" rotation="0" pointList="-556,-188,-556,-276,-516,-276" enodeid="Circ_eNode-8" x="-556" hflip="1" valLabely="0" endpinid="Node-4-1" vflip="1" valLabRot="0" id="Connector-9" labely="-24" labelx="-16" valLabelx="0" startpinid="Voltimeter-3-rPin" Show_id="false"/>
+ 
+Connector-10: 
+<item objectName="Connector-10" itemtype="Connector" y="-276" labelrot="0" rotation="0" pointList="-516,-276,-516,-308,-284,-308,-284,-188,-308,-188" enodeid="Circ_eNode-8" x="-516" hflip="1" valLabely="0" endpinid="Arduino Uno-1-GND1" vflip="1" valLabRot="0" id="Connector-10" labely="-24" labelx="-16" valLabelx="0" startpinid="Node-4-2" Show_id="false"/>
+ 
+Connector-11: 
+<item objectName="Connector-11" itemtype="Connector" y="-156" labelrot="0" rotation="0" pointList="-452,-156,-572,-156,-572,-188" enodeid="Circ_eNode-12" x="-452" hflip="1" valLabely="0" endpinid="Voltimeter-3-lPin" vflip="1" valLabRot="0" id="Connector-11" labely="-24" labelx="-16" valLabelx="0" startpinid="Arduino Uno-1-PB3" Show_id="false"/>
+ 
+Connector-14: 
+<item objectName="Connector-14" itemtype="Connector" y="-116" labelrot="0" rotation="0" pointList="-548,-116,-548,-140,-452,-140" enodeid="enode-14" x="-548" hflip="1" valLabely="0" endpinid="Arduino Uno-1-PB5" vflip="1" valLabRot="0" id="Connector-14" labely="-24" labelx="-16" valLabelx="0" startpinid="Audio Out-13-lPin" Show_id="false"/>
+ 
+Connector-15: 
+<item objectName="Connector-15" itemtype="Connector" y="-132" labelrot="0" rotation="0" pointList="-452,-132,-500,-132,-500,-84,-548,-84,-548,-108" enodeid="enode-15" x="-452" hflip="1" valLabely="0" endpinid="Audio Out-13-rPin" vflip="1" valLabRot="0" id="Connector-15" labely="-24" labelx="-16" valLabelx="0" startpinid="Arduino Uno-1-GND0" Show_id="false"/>
+ 
+</circuit>
